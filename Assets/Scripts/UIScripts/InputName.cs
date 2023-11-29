@@ -11,14 +11,15 @@ public class InputName : MonoBehaviour
     public GameObject Player1;
     public GameObject Player2;
     public GameObject PlayerSelect;
-
+    
     // Start is called before the first frame update
 
     public void StartButton()
     {
         string playerName = inputField.text;
+        Dictionary<string, int> playerNames = new Dictionary<string, int>();
 
-
+        
         if (playerName.Length >= 2 && 10 >= playerName.Length)
         {
             PlayerPrefs.SetString("PlayerName", playerName);

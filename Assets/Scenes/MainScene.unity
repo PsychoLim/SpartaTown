@@ -18878,7 +18878,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &557830520
 Transform:
   m_ObjectHideFlags: 0
@@ -57715,12 +57715,13 @@ GameObject:
   m_Component:
   - component: {fileID: 1068832304}
   - component: {fileID: 1068832305}
-  - component: {fileID: 1068832306}
   - component: {fileID: 1068832308}
   - component: {fileID: 1068832309}
   - component: {fileID: 1068832310}
   - component: {fileID: 1068832311}
   - component: {fileID: 1068832312}
+  - component: {fileID: 1068832306}
+  - component: {fileID: 1068832313}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -57783,7 +57784,19 @@ MonoBehaviour:
   m_ControlsChangedEvent:
     m_PersistentCalls:
       m_Calls: []
-  m_ActionEvents: []
+  m_ActionEvents:
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 552cc856-4077-4086-9850-2465cf5a9bb7
+    m_ActionName: Player/Move[/Keyboard/w,/Keyboard/s,/Keyboard/a,/Keyboard/d,/Keyboard/upArrow,/Keyboard/downArrow,/Keyboard/leftArrow,/Keyboard/rightArrow]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: 2b2a3245-bfac-4bcf-bf17-927f39b97b74
+    m_ActionName: Player/Look[/Mouse/position]
+  - m_PersistentCalls:
+      m_Calls: []
+    m_ActionId: a6a8f7ef-7f93-4c5e-aa8f-470b6e19a79c
+    m_ActionName: Player/Fire[/Mouse/leftButton]
   m_NeverAutoSwitchControlSchemes: 0
   m_DefaultControlScheme: 
   m_DefaultActionMap: Player
@@ -57902,6 +57915,19 @@ MonoBehaviour:
   playerNameText: {fileID: 246136407}
   playerSprite1: {fileID: 557830521}
   playerSprite2: {fileID: 245840993}
+--- !u!114 &1068832313
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1068832303}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 264a72313929f8d4f86bc09b9ac8e5e5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  animator: {fileID: 557830522}
 --- !u!1 &1668089247
 GameObject:
   m_ObjectHideFlags: 0
